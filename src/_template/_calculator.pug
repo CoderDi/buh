@@ -1,0 +1,19 @@
+section.calc
+  .wrapper.calc__wrapper
+    h2.page__title РАСЧЕТ ОБСЛУЖИВАНИЯ
+    span.page__subtitle Рассчитайте самостоятельно стоимость бухгалтерского обслуживания сейчас, онлайн!
+    .calc__block
+      .calc__section
+        span.calc__section_title СИСТЕМА НАЛОГООБЛОЖЕНИЯ
+        .calc__section_range
+          input(id="calc-system" type="range" min="1" max="3" step="1" value="1")
+        .calc__section_shtrih
+          .calc__section_shtrih-item.calc__section_shtrih--active
+            i
+            span.calc__section_shtrih--text УСН 6%
+          .calc__section_shtrih-item.calc__section_shtrih-item--ever
+            i
+            span.calc__section_shtrih--text УСН 15%
+          .calc__section_shtrih-item
+            i
+            span.calc__section_shtrih--text ОСН

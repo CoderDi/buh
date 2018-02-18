@@ -1,4 +1,104 @@
 /*FOOTER*/
 .footer {
+  padding: 35px 0;
   
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: #000000;
+    font-family: "Futura PT";
+    font-size: 24px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 17px;
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    color: #939393;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: #444444;
+      text-decoration: none;
+      border-bottom: 1px solid #444444;
+    }
+
+    &::before {
+      position: absolute;
+      top: 8px;
+      left: -15px;
+      content: '';
+      background: url(../img/li-footer.png) no-repeat center;
+      width: 3px;
+      height: 5px;
+    }
+  }
+  &__div {
+    width: 1px;
+    height: 122px;
+    margin: 0 15px;
+    flex-shrink: 0;
+    background: #d4d4d4;
+  }
+  &__contacts {
+    &_span {
+      display: block;
+      color: #939393;
+      font-family: "Futura PT";
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+  &__phone {
+    display: block;
+    padding: 7px 0;
+    font-family: "Futura PT";
+    color: #000000;
+    font-size: 30px;
+    font-weight: 300;
+
+    & b {
+      font-weight: 400;
+    }
+  }
+  &__getcall {
+    color: #000000;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__weblitex {
+    display: block;
+    padding-left: 60px;
+    background: url(../img/weblitex.png) no-repeat center left;
+    color: #000000;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-weight: 300;
+    &:hover {
+      text-decoration: none;
+    }
+
+    & span {
+      font-weight: 500;
+      display: block;
+    }
+    &:hover span {
+      text-decoration: underline;
+    }
+  }
 }

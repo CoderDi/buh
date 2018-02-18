@@ -1,3 +1,394 @@
 html, body, * {
   font-family: 'Futura PT', sans-serif;
 }
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1305px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header {
+  position: relative;
+  width: 100%;
+
+  &-top {
+
+    &__wrapper {
+      height: 140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+
+    & img {
+      display: block;
+      margin-right: 25px;
+    }
+    &_text {
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 24px;
+      font-weight: 300;
+      & span {
+        display: block;
+        color: #f1d0d3;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 38px;
+        border-bottom: 2px solid #f1d0d3;
+      }
+    }
+  }
+  &__contacts {
+    text-align: right;
+  }
+  &__phone {
+    display: block;
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 34px;
+    font-weight: 300;
+    background: url(../img/incall.png) no-repeat center left;
+    padding-left: 34px;
+    &:hover {
+      text-decoration: underline;
+    }
+    & b {
+      font-weight: 400;
+    }
+  }
+  &__getcall {
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__menu {
+    height: 53px;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_block {
+      display: flex;
+      padding-right: 65px;
+      & i {
+        display: block;
+        margin-right: 32px;
+        color: #ffffff;
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        cursor: default;
+      }
+    }
+    &_link {
+      display: block;
+      margin-right: 32px;
+      position: relative;
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      &:hover {
+        color: #ffc300;
+        text-decoration: underline;
+      }
+    }
+    &_contacts {
+      position: relative;
+      height: 100%;
+
+      & > span {
+        color: #ffffff;
+        font-family: "Futura PT";
+        font-size: 18px;
+        font-weight: 500; 
+        cursor: pointer;
+        display: block;
+        line-height: 53px;
+        padding: 0 30px 0 35px;
+        background: url(../img/li-contacts.png) no-repeat 17px center;
+      }
+      &:hover {
+        & > span {
+          background: url(../img/li-contacts.png) no-repeat 17px center, rgba(0, 0, 0, .6);
+        }
+        & .header__menu_drop {
+          opacity: 1;
+          left: 0;
+          visibility: visible;
+        }
+      }
+    }    
+
+    &_drop {
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      width: 380px;
+      box-sizing: border-box;
+      left: 20px;
+      background: rgba(0, 0, 0, .75);
+      opacity: 0;
+      visibility: hidden;
+      transition: .15s ease-in-out;
+      padding: 35px 7px 15px 25px;
+      &:hover ~ span {
+        background: url(../img/li-contacts.png) no-repeat 17px center, rgba(0, 0, 0, .6);
+      }
+    }
+    &_line {
+      margin-bottom: 18px;
+      display: flex;
+
+      & i {
+        margin-right: 20px;
+        display: block;
+        flex-shrink: 0;
+        width: 26px;
+        height: 26px;
+        background: url(../img/contacts.png) no-repeat center;
+      }
+      &--phone i {
+        background-position: -3px 0;
+      }
+      &--mail i {
+        background-position: -3px -42px;
+      }
+      &--whats i {
+        background-position: -3px -88px;
+      }
+      &--address i {
+        background-position: 0px -132px;
+      }
+      &--inn i {
+        background-position: -1px -173px;
+      }
+      &--text i {
+        background-position: -1px -218px;
+      }
+    }
+    &_item {
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 18px;
+      display: block;
+      padding-top: 3px;
+      font-weight: 300;
+    }
+  }
+  
+  &-form {
+    margin: 0 auto;
+    position: relative;
+    width: 845px;
+    box-shadow: 0 0 47px 3px rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, .5);
+    padding: 30px 50px 20px 70px;
+    box-sizing: border-box;
+
+    &__title {
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 26px;
+      font-weight: 300; 
+      
+      & b {
+        font-weight: 500;
+      }
+    }
+    &__flex {
+      padding: 25px 0 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__label {
+      position: relative;
+
+      & span {
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 53px;
+        height: 27px;
+        border-right: 1px solid #d6d6d6;
+      }
+      &--name span {
+        background: url(../img/name.png) no-repeat center;
+      }
+      &--phone span {
+        background: url(../img/phone.png) no-repeat center;
+      }
+    }
+    &__input {
+      display: block;
+      width: 236px;
+      height: 53px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+      background-color: #ffffff;
+      box-sizing: border-box;
+      border: none;
+      padding-left: 78px;
+      outline-color: #cb215f;
+      color: #444444;
+      font-family: "Futura PT";
+      font-size: 20px;
+      font-weight: 300;
+    }
+    &__submit {
+      display: block;
+      border: none;
+      outline: none;
+      width: 206px;
+      height: 53px;
+      background-color: #ffc300;
+      color: #000000;
+      font-family: "Futura PT";
+      font-size: 20px;
+      font-weight: 400;
+      transition: .1s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #cb215f;
+        color: #ffffff;
+      }
+    }
+    &__check {
+      display: flex;
+      align-items: center;
+      user-select: none;
+
+      &_custom {
+        width: 17px;
+        height: 17px;
+        display: block;
+        margin-right: 12px;
+        flex-shrink: 0;
+        background: url(../img/checkbox.png) no-repeat;
+      }
+      &_text {
+        color: #afafaf;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-weight: 300;
+
+        & a {
+          color: #afafaf;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &__checkbox {
+      display: none;
+
+      &:checked {
+        & ~ span.header-form__check_custom {
+          background-position: -19px 0;
+        }
+      }
+    }
+  }
+}
+
+
+.top {
+  position: relative;
+  box-sizing: border-box;
+
+  &-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    &__index, &__buh {
+      background: url(../img/slide1.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+}
+
+
+.header-content {
+  position: relative;
+  width: 840px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 0 40px 70px;
+
+  &__title {
+    position: relative;
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 56px;
+    margin: 0 0 70px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 226px;
+      height: 10px;
+      background-color: #db9299;
+      left: 0;
+      bottom: -35px;
+    }
+    & b {
+      display: block;
+      font-weight: 400;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      display: block;
+      padding-left: 49px;
+      background: url(../img/li.png) no-repeat center left;
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 9px;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+
+
+
+

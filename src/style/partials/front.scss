@@ -1,0 +1,307 @@
+/*FRONT*/
+.page {
+  &__title {
+    color: #000000;
+    font-family: "Futura PT";
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400; 
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  &__subtitle {
+    color: #444444;
+    font-family: "Futura PT";
+    font-size: 24px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+  }
+}
+.what {
+  padding-top: 55px;
+  
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+  &__btn {
+    width: 249px;
+    height: 42px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: "Futura PT";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+
+    &:hover {
+      background-color: #cb215f;
+      border: 1px solid #cb215f;
+      color: #ffffff;
+    }
+  }
+  &__block {
+    width: 563px;
+    padding: 35px 0 40px 50px;
+    box-sizing: border-box;
+    margin: 0 10px 25px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    transition: .1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+      box-shadow: 0 0 65px rgba(0, 0, 0, 0.29);
+    }
+    &_title {
+      color: #c21245;
+      font-family: "Futura PT";
+      font-size: 30px;
+      font-weight: 300;
+    }
+    &_list {
+      padding: 25px 0;
+      flex-grow: 2;
+    }
+    &_item {
+      display: block;
+      color: #444444;
+      font-family: "Futura PT";
+      font-size: 24px;
+      font-weight: 300;
+      & b {
+        font-weight: 400;
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+.advantages {
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+  &__flex {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    width: 475px;
+    margin-bottom: 55px;
+    &_img {
+      width: 64px;
+      flex-shrink: 0;
+      margin-right: 30px;
+    }
+    &_title {
+      display: block;
+      color: #000000;
+      font-family: "Futura PT";
+      font-size: 30px;
+      line-height: 22px;
+      font-weight: 300;
+    }
+    &_text {
+      color: #444444;
+      font-family: "Futura PT";
+      font-size: 20px;
+      font-weight: 300;
+      margin: 20px 0 0;
+    }
+  }
+}
+
+.contacts {
+  position: relative;
+  background: url(../img/contacts-bg.jpg) no-repeat center;
+  padding: 68px 10px 50px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  &__flex {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__left {
+    width: 440px;
+    margin: 0 50px;
+
+    &_title {
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 30px;
+      font-weight: 500;
+      display: block;
+      margin: 0 0 60px;
+    }
+  }
+  &__right {
+    width: 410px;
+    margin: 0 50px;
+  }
+  &__form {
+    display: block;
+    box-shadow: 0 0 47px 3px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 25px 30px 30px;
+
+    &_check {
+      justify-content: center;
+    }
+    &_text1 {
+      color: #000000;
+      font-family: "Futura PT";
+      font-size: 26px;
+      font-weight: 300;
+      display: block;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    &_text2 {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &_label {
+      position: relative;
+      display: block;
+      max-width: 300px;
+      margin: 0 auto 25px;
+      & span {
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 53px;
+        height: 27px;
+        border-right: 1px solid #d6d6d6;
+      }
+      &--name span {
+        background: url(../img/name.png) no-repeat center;
+      }
+      &--phone span {
+        background: url(../img/phone.png) no-repeat center;
+      }
+    }
+    &_input {
+      width: 100%;
+      height: 53px;
+      border: none;
+      box-sizing: border-box; 
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+      background-color: #ffffff;
+      outline:none;
+      padding-left: 78px;
+      color: #444444;
+      font-family: "Futura PT";
+      font-size: 20px;
+      font-weight: 300;
+
+      &:active, &:focus {
+        box-shadow: 0 0 3px rgba(203, 33, 95, 1);;
+      }
+    }
+    &_textarea {
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+      margin: 0 auto 25px;
+      height: 109px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+      background-color: #ffffff;
+      color: #444444;
+      font-family: "Futura PT";
+      font-size: 20px;
+      border: none;
+      font-weight: 300;
+      padding: 17px 10px 15px 20px;
+      outline: none;
+      resize: none;
+      &:active, &:focus {
+        box-shadow: 0 0 3px rgba(203, 33, 95, 1);;
+      }
+    }
+    &_submit {
+      display: block;
+      width: 300px;
+      height: 53px;
+      margin: 0 auto;
+      color: #000000;
+      font-family: "Futura PT";
+      font-size: 20px;
+      outline: none;
+      cursor: pointer;
+      font-weight: 400;
+      box-sizing: border-box;
+      border: none;
+      background-color: #ffc300;
+      transition: .1s ease-in-out;
+      margin-bottom: 20px;
+
+      &:hover {
+        background-color: #cb215f;
+        color: #ffffff;
+      }
+    }
+  }
+  &__btn {
+    width: 249px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin: 0 0 0 45px;
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+
+    &:hover {
+      background-color: #cb215f;
+      border: 1px solid #cb215f;
+    }
+  }
+  &__list {
+
+    & .header__menu_item {
+      font-size: 24px;
+      padding-top: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
