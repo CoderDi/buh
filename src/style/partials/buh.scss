@@ -95,7 +95,6 @@
 }
 
 
-
 .calc {
   padding: 55px 0 30px;
 
@@ -106,6 +105,7 @@
   }
   &__section {
     padding: 36px 15px;
+    border-bottom: 1px solid #ebebeb;
 
     &_title {
       display: block;
@@ -118,140 +118,68 @@
     &_range {
       padding: 40px 40px 10px;
     }
-    &_shtrih {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 40px 0;
-      &-item {
-        text-align: center;
-        &--ever {
-          padding-right: 22px;
-        }
 
-        & i {
-          display: block;
-          width: 50%;
-          height: 19px;
-          border-right: 1px solid #000;
-          margin-bottom: 15px;
-        }
-        &:first-child i {
-          width: 16px;
-        }
-        &:last-child i {
-          width: calc(100% - 16px);
-        }
+    & &_range {
+
+      .ui-slider-pips .ui-slider-line {
+        height: 19px;
       }
-      &--active &--text {
+      .ui-slider-pips .ui-slider-pip {
+        top: 31px;
+        width: 74px;
+        margin-left: -37px;
+      }
+      .ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-label, 
+      .ui-slider-pips .ui-slider-label:hover {
         color: #cb215e;
-        font-family: "Futura PT";
-        font-size: 18px;
         font-weight: 400;
       }
-      
-      &--text {
+      .ui-slider-pips .ui-slider-label {
+        top: 5px;
+        padding-top: 30px;
+        width: 74px;
+        text-align: center;
+        margin-left: -37px;
         color: #000000;
         font-family: "Futura PT";
         font-size: 18px;
-        display: block;
-        font-weight: 400;
+        font-weight: 300;
+      }
+      .ui-widget-content {
+        background: #ebebeb;
+        border: none;
+        height: 11px;
+        border-radius: 0;
+        font-family: 'Futura PT', sans-serif;
+      }
+      .ui-state-active, 
+      .ui-widget-content .ui-state-active, 
+      .ui-widget-header .ui-state-active, 
+      .ui-state-default, 
+      .ui-widget-content .ui-state-default, 
+      .ui-widget-header .ui-state-default {
+        width: 32px;
+        height: 32px;
+        box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
+        background: #cb215e;
+        border-radius: 100%;
+        outline: none;
+        border: none;
+      }
+      .ui-slider .ui-slider-handle {
+        top: -10px;
+        margin-left: -16px;
+        transition: transform .15s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        }
       }
     }
   }
 }
-
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 11px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: #ebebeb;
-  border-radius: 0px;
-  border: 0px solid #000101;
-}
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
-  border: 0px solid #000000;
-  height: 32px;
-  width: 32px;
-  border-radius: 100%;
-  background: #cb215e;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -10px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ebebeb;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 11px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-  background: #ebebeb;
-  border-radius: 0px;
-  border: 0px solid #000101;
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
-  border: 0px solid #000000;
-  height: 32px;
-  width: 32px;
-  border-radius: 100%;
-  background: #cb215e;
-  cursor: pointer;
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 11px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 39px 0;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #ebebeb;
-  border: 0px solid #000101;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-  background: #ebebeb;
-  border: 0px solid #000101;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.15);
-  border: 0px solid #000000;
-  height: 32px;
-  width: 32px;
-  border-radius: 100%;
-  background: #cb215e;
-  cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #ebebeb;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #ebebeb;
-}
-
-
-
-
 
 
 
