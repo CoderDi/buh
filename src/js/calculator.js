@@ -143,7 +143,7 @@
     function translateLabels(){
         var lab_tarif = ["Лайт","Оптимальный","Статус"];
         var lab_nalog = ["Усн 6%","Усн 15%","ОСН"];
-        var lab_opers = ["До 10","До 20","До 50","До 100","До 200","До 300","До 400","До 500","От 500"];
+        var lab_opers = ["До 10","До 25","До 50","До 100","До 150"];
 
         var tarifLabel = lab_tarif[tarif - 1];
         var nalogLabel = lab_nalog[nalog_type - 1];
@@ -214,20 +214,16 @@
         //oper-slider
          var operationsLabels = [          
             "<span>до 10</span>", 
-            "<span>до 20</span>", 
+            "<span>до 25</span>", 
             "<span>до 50</span>", 
             "<span>до 100</span>", 
-            "<span>до 200</span>", 
-            "<span>до 300</span>", 
-            "<span>до 400</span>", 
-            "<span>до 500</span>", 
-           // "<span><em>от</em>500</span>"               
+            "<span>до 150</span>"               
         ];
     }
     if ($( ".operSlider" ).length) {
          $(".operSlider")
         .slider({
-            max: 8,
+            max: 5,
             min: 1,
             value: operations_amount,
             animate: 400,
@@ -249,7 +245,7 @@
     if ($( ".workersSlider" ).length) {
          $(".workersSlider")
         .slider({
-            max: 100,
+            max: 20,
             min: 0,
             value: workers_amount,
             animate: 400,
@@ -269,7 +265,7 @@
         })
         .slider("pips", {
             rest: "label",
-            step:10
+            step: 1
         });
     }
 
