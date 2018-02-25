@@ -229,6 +229,7 @@ body {
 
       & span {
         position: absolute;
+        z-index: 2;
         left: 0;
         top: 13px;
         width: 53px;
@@ -338,13 +339,17 @@ body {
       background: url(../img/slide2.jpg) no-repeat center;
       background-size: cover;
     }
+    &__sale {
+      background: url(../img/buh-bg.jpg) no-repeat center;
+      background-size: cover;
+    }
   }
 }
 
 
 .header-content {
   position: relative;
-  width: 840px;
+  width: 845px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 50px 0 40px 70px;

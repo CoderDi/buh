@@ -1,0 +1,57 @@
+section.calc
+  .wrapper.calc__wrapper
+    h2.page__title КАЛЬКУЛЯТОР 
+      span БЕЗ СКИДКИ
+    span.page__subtitle Расчитайте цену ведения бухгалтерии 
+      b без 50% предложения 
+      | и сравните свою выгоду.
+    form.calc__form
+      .calc__section
+        span.calc__section_title СИСТЕМА НАЛОГООБЛОЖЕНИЯ
+        .calc__section_range
+          .nalogSlider
+      .calc__section
+        span.calc__section_title КОЛИЧЕСТВО ОПЕРАЦИЙ
+        .calc__section_range
+          .operSlider
+      .calc__section
+        span.calc__section_title КОЛИЧЕСТВО СОТРУДНИКОВ
+        .workers-input
+          .workers-input--neg -
+          input#workers.form-control.calculator-workers-count(type="text" readonly="true")
+          .workers-input--pos +
+        .calc__section_range
+          .workersSlider
+
+      .calc__flex
+        .calc__checks
+          label.calc__checkbox
+            input(type="checkbox")
+            span.calc__checkbox_custom
+            span.calc__checkbox_text Использование льгот по НДС, взносам; НКО
+          label.calc__checkbox
+            input(type="checkbox")
+            span.calc__checkbox_custom
+            span.calc__checkbox_text Зарегистрированные обособленные подразделения, филиалы
+          label.calc__checkbox
+            input(type="checkbox")
+            span.calc__checkbox_custom
+            span.calc__checkbox_text ККМ
+          label.calc__checkbox
+            input(type="checkbox")
+            span.calc__checkbox_custom
+            span.calc__checkbox_text Совмещение различных систем налогообложения
+          label.calc__checkbox
+            input(type="checkbox")
+            span.calc__checkbox_custom
+            span.calc__checkbox_text Большая номенклатура (более 20 позиций в первичном документе)
+        .calc__get
+          span.calc__get_title СТОИМОСТЬ ОБСЛУЖИВАНИЯ 
+          img.calc__get_img(src="img/kist.png", alt="")
+          span.calc__get_price.calc__get_price--sale
+            span#resultPrice  3000 
+            | руб. 
+          span.calc__get--sale
+            span.calc__get--sale-price 1500 руб.
+            span Без скрытых акций и условий дарим -50%
+          span.calc__get--sale-btn ЗАБРАТЬ ПРЕДЛОЖЕНИЕ

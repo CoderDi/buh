@@ -1,0 +1,21 @@
+form.header-form.header-form--sale(action="")
+  .sale__header-sale
+    span Минимальная 
+      br
+      | экономия с нами:
+    b от 7500 рублей.
+  span.header-form__title Получите консультацию по услугам 
+    b оставив свой номер телефона
+  .header-form__flex
+    label.header-form__label.header-form__label--name
+      span
+      input.header-form__input(type="text" placeholder="Введите имя")
+    label.header-form__label.header-form__label--phone
+      span
+      input.header-form__input(type="tel" placeholder="Введите телефон")
+    input.header-form__submit(type="submit" value="ПЕРЕЗВОНИТЕ")
+  label.header-form__check
+    input.header-form__checkbox(type="checkbox" checked)
+    span.header-form__check_custom
+    span.header-form__check_text Я согласен с 
+      a(href="") политикой конфиденциальности

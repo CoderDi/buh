@@ -16,8 +16,104 @@ footer.footer
       span W E B L I T E X . R U
 
 
-.popup
+.popup#popup-form
   .popup__bg
-  .popup__form--container
+  .popup__block.popup__block--form
     .popup__close
     form.popup__form(action="")
+      span.popup__form_title Форма заказа звонка
+      span.popup__form_text Мы перезвоним Вам в ближайшее время.
+      label.header-form__label.header-form__label--name
+        span
+        input.header-form__input(type="text" placeholder="Введите имя")
+      label.header-form__label.header-form__label--phone
+        span
+        input.header-form__input(type="tel" placeholder="Введите телефон")
+      input.header-form__submit(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
+      label.header-form__check
+        input.header-form__checkbox(type="checkbox" checked)
+        span.header-form__check_custom
+        span.header-form__check_text Я согласен с 
+          a(href="") политикой конфиденциальности
+
+.popup#popup-mesget
+  .popup__bg
+  .popup__block.popup__block--mesget
+    .popup__close
+    .popup__mesget
+      span.popup__form_title Ваш вопрос отправлен!
+      span.popup__form_text Специалист свяжется с Вами в ближайшее время.
+        br
+        | А если у Вас горит и ждать нельзя, звоните нам:
+      a.popup__mesget_phone(href="")
+        i
+        | 8 (8362) 
+        b 00-00-00
+      span.popup__mesget_time Пн — Пт: 09.00 - 18.00; Сб — Вс: Выходной
+
+.popup#popup-thanks
+  .popup__bg
+  .popup__block.popup__block--mesget
+    .popup__close
+    .popup__mesget
+      span.popup__form_title Спасибо за вашу заявку!
+      span.popup__form_text Специалист свяжется с Вами в ближайшее время.
+        br
+        | А если у Вас горит и ждать нельзя, звоните нам:
+      a.popup__mesget_phone(href="")
+        i
+        | 8 (8362) 
+        b 00-00-00
+      span.popup__mesget_time Пн — Пт: 09.00 - 18.00; Сб — Вс: Выходной
+      
+.popup#popup-more
+  .popup__bg
+  .popup__block.popup__block--more
+    .popup__close
+    .popup__more
+      .popup__more_content
+        span.popup__more_content_title Введение кадрового учета
+        p.popup__more_content_text Возврат прав, оспаривание виновности в ДТП, взыскание ущерба с виновника ДТП. Существенно важным в решении проблем, возникающих в связи с ДТП, является незамедлительное вступление в процесс грамотного специалиста. Юристы нашей организации обладают огромным опытом и широкой практикой по вопросам оспаривания административных взысканий, возврата прав в том числе в связи с алкогольным опьянением, взыскания ущерба с виновника аварии.
+      .popup__more_form
+        span.popup__more_title ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС И ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ БЕСПЛАТНО ЧЕРЕЗ 15 МИНУТ
+        .popup__more_flex
+          label.header-form__label.header-form__label--name
+            span
+            input.header-form__input(type="text" placeholder="Введите имя")
+          label.header-form__label.header-form__label--phone
+            span
+            input.header-form__input(type="tel" placeholder="Введите телефон")
+          input.header-form__submit(type="submit" value="ПЕРЕЗВОНИТЕ")
+        label.header-form__check
+          input.header-form__checkbox(type="checkbox" checked)
+          span.header-form__check_custom
+          span.header-form__check_text Я согласен с 
+            a(href="") политикой конфиденциальности
+
+.popup#popup-sale
+  .popup__bg
+  .popup__block.popup__block--form
+    .popup__close
+    form.popup__form(action="")
+      span.popup__form_title Получите -50% от цены!
+      span.popup__form_text Оставьте заявку, мы перезвоним со скидкой!
+      label.header-form__label.header-form__label--name
+        span
+        input.header-form__input(type="text" placeholder="Введите имя")
+      label.header-form__label.header-form__label--phone
+        span
+        input.header-form__input(type="tel" placeholder="Введите телефон")
+      input.header-form__submit(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
+      label.header-form__check
+        input.header-form__checkbox(type="checkbox" checked)
+        span.header-form__check_custom
+        span.header-form__check_text Я согласен с 
+          a(href="") политикой конфиденциальности
+
+
+
+
+
+
+
+

@@ -345,8 +345,204 @@
 }
 
 
+.sale {
 
+  &__header-sale {
+    position: absolute !important;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 30vw;
+    padding-top: 25px;
+    padding-left: 38px;
+    box-sizing: border-box;
+    background-color: #cb215e;
 
+    & span {
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 24px;
+      font-weight: 300;
+    }
+    & b {
+      display: block;
+      padding-top: 25px;
+      color: #ffffff;
+      font-family: "Futura PT";
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+}
+.header-content__plash {
+  display: block;
+  position: relative;
+  left: -70px;
+  color: #ffffff;
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-weight: 300;
+  background: url(../img/li.png) no-repeat 70px center, rgba(0, 0, 0, .5);
+  height: 65px;
+  display: flex;
+  width: 100vw;
+  padding-left: 120px;
+  align-items: center;
+}
+.page__title span {
+  text-decoration: line-through;
+}
+.calc__get--sale {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background:  url(../img/calc-bg.jpg) no-repeat center;
+  color: #ebebeb;
+  font-family: "Futura PT";
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b0f35;
+    opacity: 0.8;
+  }
+  & span {
+    position: relative;
+  }
+  & span.calc__get--sale-price {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 44px;
+    font-weight: 400;
+  }
+}
+.header-content__text {
+  display: block;
+  padding-top: 15px;
+  padding-left: 50px;
+  color: #ffffff;
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-weight: 300;
+  & span {
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+.calc__get_price--sale {
+  text-decoration: line-through;
+}
+.what__block--sale {
+  position: relative;
+  background: url(../img/buh-sopr.jpg) no-repeat center;
+  background-size: cover;
+  &-content {
+    padding: 50px 0 0 20px;
+    color: #ffffff;
+    font-family: "Futura PT";
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &-span1 {
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+  }
+  &-span2 {
+    font-size: 55px;
+    font-weight: 700;
+    display: block;
+    padding-top: 20px;
+  }
+  & * {
+    position: relative;
+  }
+  & .what__btn {
+    color: #ffffff;
+    margin-left: 20px;
+    border: 1px solid #fff;
+
+    &:hover {
+      background-color: #ffc300;
+      color: #000000;
+      border: 1px solid transparent
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b0f35;
+    opacity: 0.65;
+  }
+}
+.calc__get--sale-btn {
+  display: block;
+  margin: 0 auto;
+  color: #000000;
+  font-family: "Futura PT";
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 312px;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ffc300;
+  transition: .15s ease-in-out;
+  &:hover {
+    background: #cb215e;
+    color: #fff;
+  }
+}
+
+.header-content--sale {
+  margin-top: 25px;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, .5);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    width: 50vw;
+  }
+}
+.header-form--sale {
+  position: relative;
+  & * {
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -30vw;
+    content: '';
+    height: 100%;
+    width: 170vw;
+    background: rgba(0, 0, 0, .5);
+  }
+}
 
 
 
