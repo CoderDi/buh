@@ -26,7 +26,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: {
-        html: 'src/sale.pug',
+        html: 'src/*.pug',
         js: 'src/js/*.js',
         style: 'src/style/*.scss',
         img: 'src/img/**/*.*',

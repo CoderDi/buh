@@ -1,4 +1,43 @@
 $(document).ready(function() {
+  $(".js-getcall").click(function(){
+    $("#popup-form").addClass("popup--show");
+  });
+  $(".js-getsale").click(function(){
+    $("#popup-sale").addClass("popup--show");
+  });
+  $(".popup__bg").click(function(){
+    $(this).parents(".popup").removeClass("popup--show");
+  });
+  $(".popup__close").click(function(){
+    $(this).parents(".popup").removeClass("popup--show");
+  });
+
+
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 247){  
+      $('.header__menu').addClass("glide--top");
+    }
+    else{
+      $('.header__menu').removeClass("glide--top");
+    }
+    if ($(this).scrollTop() > 300){  
+      $('.header__menu').addClass("glide");
+    }
+    else{
+      $('.header__menu').removeClass("glide");
+    }
+  });
+
+
+
+
+
+
+
+
+
+  //calculator
   $("#calc-system").on("input", function(){
     $(this).parents(".calc__section").find(".calc__section_shtrih-item").removeClass("calc__section_shtrih--active");
     $(this).parents(".calc__section").find(".calc__section_shtrih-item:nth-child("+$(this).val()+")").addClass("calc__section_shtrih--active");

@@ -88,6 +88,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    &--container {
+      height: 53px;
+    }
     &_block {
       display: flex;
       padding-right: 65px;

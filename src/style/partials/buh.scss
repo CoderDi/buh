@@ -443,6 +443,19 @@
 .calc__get_price--sale {
   text-decoration: line-through;
 }
+.glide--top {
+  position: fixed;
+  z-index: 99;
+  top: -53px;
+  left: 0;
+  width: 100%;
+  transition: .15s ease-in-out;
+}
+.glide {
+  top: 0;
+  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.2);
+  background-color: #cb215f;
+}
 .what__block--sale {
   position: relative;
   background: url(../img/buh-sopr.jpg) no-repeat center;
